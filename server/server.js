@@ -7,6 +7,10 @@ const app = express();
 app.use(cors({ origin: process.env.CLIENT_URL ? process.env.CLIENT_URL.split(',') : '*' }));
 app.use(express.json());
 
+const info = { message: 'Leave Management API is running', health: '/api/health' };
+app.get('/', (_, res) => res.json(info));
+app.get('/api', (_, res) => res.json(info));
+
 app.get('/api/health', (_, res) => res.json({ ok: true }));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/leaves', require('./routes/leaves'));
