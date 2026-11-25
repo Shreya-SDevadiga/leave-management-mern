@@ -1,0 +1,15 @@
+*{box-sizing:border-box}body{font-family:system-ui,sans-serif;margin:0;background:#f3f4f6;color:#111}
+header{background:#1e3a8a;color:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+main{max-width:960px;margin:20px auto;padding:0 12px}
+.card{background:#fff;border-radius:10px;padding:16px;margin-bottom:16px;box-shadow:0 1px 4px #0002}
+input,select,textarea,button{padding:9px;margin:4px 0;width:100%;border:1px solid #ccc;border-radius:6px;font:inherit}
+button{background:#2563eb;color:#fff;border:0;cursor:pointer;width:auto;padding:9px 16px}
+button.red{background:#dc2626}button.green{background:#16a34a}button.gray{background:#6b7280}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stat{background:#eff6ff;padding:14px;border-radius:8px;text-align:center}.stat b{font-size:26px;display:block}
+.badge{padding:2px 8px;border-radius:10px;font-size:12px;color:#fff}
+.Pending{background:#d97706}.Approved{background:#16a34a}.Rejected{background:#dc2626}
+.bar{background:#e5e7eb;border-radius:6px;height:10px}.bar i{display:block;height:10px;background:#2563eb;border-radius:6px}
+.login{max-width:360px;margin:60px auto}.err{color:#dc2626}.ok{color:#16a34a}.center{text-align:center;margin-top:40px}
+.scroll{overflow-x:auto}.link{color:#2563eb;cursor:pointer}
